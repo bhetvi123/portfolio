@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="style.js"></script>
+</head>
+<body>
+  <section>
+      <nav id="mobile-menu-button">
+        <div class="container-o">
+          <div class="nav-left">
+            <div class="space-nav">
+              <a href="#">home</a>
+            </div>
+            </div>
+            <div class="mobileonly">
+                <a href="#" id="toggleMenu" onclick="event.preventDefault()">☰</a>
+            </div>
+          <div class="nav-right" id="showw">
+            <ul class="flex-between">
+              <li>
+                <a href="#" onclick="event.preventDefault(); scrollToSection('.root')">about</a>
+              </li>
+              <li>
+                <a href="#" onclick="event.preventDefault(); scrollToSection('.technical-skills')">skills</a>
+              </li>
+              <li>
+                <a href="#" onclick="event.preventDefault(); scrollToSection('.parts')">project</a>
+              </li>
+              <li>
+                <a href="#" onclick="event.preventDefault(); scrollToSection('.mainabout')">experience</a>
+              </li>
+              <li>
+                <a href="#" onclick="event.preventDefault(); scrollToSection('.site-footer')">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </section>
+
+  <section>
+    <div id="backgroundRipple"></div>
+    <div class="main-container" id="mobile-menu">
+
+      <div class="container">
+          <div class="d">
+            <h1 class="h-tag">wellcome to hetvi.com</h1>
+            <p class="p-tag"> hetvi barot</p>
+
+            <div class="co">frontend
+            <span class="developer">developer</span>
+            </div>
+          
+            <h2>--Gls university--</h2>
+            <a href="hireme.html" id="openFormBtn">Hire me</a>
+
+            <div id="popup" class="popup">Request sent to admin ✅</div> -->
+            
+            <button class="tr" onclick="goToProjects()">view projects</button>
+        
+            <p class="space-banner">
+              teach stack: 
+              <a href="https://www.w3schools.com/html/">🔗</a>
+              <a href="https://www.w3schools.com/css/">📐</a>
+              <a href="https://www.w3schools.com/js/">🧠</a>
+              <a href="https://parceljs.org/recipes/react/">🚀</a>
+              <a href="https://tailwindcss.com/docs/installation/framework-guides/parcel">💾</a>
+              
+            </p> 
+          </div>
+          <div class="arrow">
+            <button onclick="functionscroll()" id="section1" aria-label="Scroll Down">
+              ⬇️
+            </button>
+          </div>
+          <div class="certificateee">
+            <img src="certificate.jpeg">
+          </div>
+      </div>
+
+
+    </div>
+  
+
+  </section>
+
+  <section>
+      <div class="root">
+        <div class="container-about">
+
+          <div>
+            <h1 class="about">About me</h1>
+            <hr class="line"></hr>
+          </div>
+
+          <div class="sectionn">
+            <div class="section-le-1">
+              <p>A passionate and self-motivated BCA student with a solid foundation in programming problem solving and frontend development proficient in langueges like html,css,javascript with a keen interest in leveraging technical skills to develop innovative software solution.</p>
+              <div class="animation-box">
+                <div class="hole"></div>
+                <img src="https://media.tenor.com/WBXa6Ot2nHIAAAAj/boy-running.gif" class="boy" />
+                <img src="https://media.tenor.com/dxxcwKDH5q8AAAAi/sneaking-out-spider-man.gif" class="spidey" />
+                </div>
+          </div>
+
+          
+          <div class="section-le-2">
+              <div class="core-components">core competencies</div>
+                <div class="box">
+                  <div class="sub-1">
+                        <div class="parts1">
+                        <h1>technical</h1>
+                        <p>html5 , css , javascript</p>
+                        </div>
+                        <div class="parts2">
+                        <h1>tools</h1>
+                        <p>vs code , sublime</p>
+                        </div>
+                  </div>
+                  <div>
+                      <div class="sub-2">
+                        <div class="parts3">
+                        <h1>soft skills</h1>
+                        <p>problem solving, teamwork, clean documentation</p>
+                        </div>
+                        <div class="parts4">
+                        <h1>performance</h1>
+                        <p>tree shaking , code spliting , styling</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+            
+            <div class="section-ri">
+              <img src="">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+    
+    <div class="a">
+      <div class="b" id="section2">
+        <div class="containeryy">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="bird"></div>
+        </div>
+        
+        <div class="resume-section">
+          <div class="resume-glow"></div>
+          <div class="resume-icon" id="resumeIcon">📄</div>
+          <h3 id="resumeTitle">My Resume</h3>
+          <div class="resume-stats">
+            <span class="stat">📊 2 Pages</span>
+            <span class="stat">🎯 Updated 2025</span>
+            <span class="stat">⚡ PDF Format</span>
+          </div>
+          <div class="resume-buttons">
+            <button class="resume-btn" onclick="downloadResume()">⬇️ Download</button>
+            <a href="resume.pdf" class="resume-btn" onclick="viewResume()">👁️ View</a>
+          </div>
+          <div class="download-count">
+            <span id="downloadCounter">Download</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+      <div class="technical-skills">
+        <div class="contant-skills">
+            <h2 class="main-skills">Technical Skills</h2>
+            <p class="con-main-skills">A comprehensive overview of my technical expertise and proficiencies </p>
+        </div>
+      </div>
+      <div class="main">
+          <div class="main-f">
+            <div class="main-s">
+              <h3 class="heading">development</h3>
+              <div class="f-development">
+                <div class="developp">frontend dvelopment
+                  <div class="per">95%</div>
+                </div>
+              </div>
+            </div>  
+              <div class="rating-per">
+                <div class="rating"></div>
+              </div>
+          </div>
+          <div class="lang">
+            <div class="javas">
+              <div class="j">
+                <a href="strc.html">HTML</a>
+              </div>
+            </div>
+            <div class="javas">
+              <div class="j">
+                <a href="strc.html">CSS</a>
+              </div>
+            </div>
+            <div class="javas">
+              <div class="j">
+                <a href="strc.html">JAVASCRIPT</a>
+              </div>
+            </div>
+              <div class="javas">
+              <div class="j">
+                <a href="strc.html">REACT</a>
+              </div>
+            </div>
+        </div>
+      </div>    
+    
+  </section>
+
+  <section class="parts">
+    <div class="part-1">
+      <div class="part2">
+        <h1 class="detail">PROJECTS</h1>
+        <hr class="line"></hr>
+      </div>
+    </div>
+
+    <div class="projects-container">
+      <div class="part-3">
+        <div class="part-4">
+          <div class="part-5">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.IUN3Lsv7q6V7pWVHv6dV0gHaEo?pid=Api&P=0&h=180" alt="Game 1">
+          </div>
+        </div>
+        <div class="part-6">
+          <h1 class="proj-1">JAVASCRIPT</h1>
+          <p class="tital">Request Page</p>
+        </div>
+        <div class="part-7">
+          <span class="lann">HTML</span>
+          <span class="lann">CSS</span>
+          <span class="lann">JAVASCRIPT</span>
+          <span class="lann">REACT</span>
+        </div>
+        <div class="part-8">
+          <button class="bu">view details</button>
+        </div>
+      </div>
+
+      <div class="part-3">
+        <div class="part-4">
+          <div class="part-5">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.Gx5Kvgjq3zJ4AHjqN3HV8gHaEK?pid=Api&P=0&h=180" alt="Game 2">
+          </div>
+        </div>
+        <div class="part-6">
+          <h1 class="proj-1">REACT</h1>
+          <p class="tital">Food Order App</p>
+        </div>
+        <div class="part-7">
+          <span class="lann">HTML</span>
+          <span class="lann">CSS</span>
+          <span class="lann">JAVASCRIPT</span>
+          <span class="lann">REACT</span>
+        </div>
+        <div class="part-8">
+          <button class="bu">view details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="mainabout">
+      <div class="aboutsection1">
+        <div class="inabout"> 
+          <span class="he">"Scrolls of My Journey"</span>
+          <h2 class="b">From blackboards to brainstorms</h2>
+          <p class="paragraph">My journey has been more than just lessons—it's been a quiet rebellion of curiosity. Each chapter, from structured learning to self-shaped projects, carved a path where knowledge became craft, and curiosity became creation.</p>
+        </div>
+        
+        <div class="relative">
+          <div class="center-line"></div>
+          <div class="part-one-p">
+            <div class="devide-left">
+              <h3>10th Grade</h3>
+              <p>Vidhyanagar School</p>
+              <p>Marks: 65%</p>
+            </div>
+            <div class="numeric">
+              <div class="st">1</div>
+            </div>
+            <div class="blank"></div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="center-line"></div>
+          <div class="part-one-p">
+            <div class="devide-left">
+              <h3>12th Grade</h3>
+              <p>Higher Secondary</p>
+              <p>Marks: 75%</p>
+            </div>
+            <div class="numeric">
+              <div class="st">2</div>
+            </div>
+            <div class="blank"></div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="center-line"></div>
+          <div class="part-one-p">
+            <div class="devide-left">
+              <h3>BCA Degree</h3>
+              <p>GLS University</p>
+              <p>Frontend Development</p>
+            </div>
+            <div class="numeric">
+              <div class="st">3</div>
+            </div>
+            <div class="blank"></div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="center-line"></div>
+          <div class="part-one-p">
+            <div class="devide-left">
+              <h3>Future Goals</h3>
+              <p>Full Stack Developer</p>
+              <p>Amazing Projects</p>
+            </div>
+            <div class="numeric">
+              <div class="st">4</div>
+            </div>
+            <div class="blank"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <h2>Hetvi Barot</h2>
+          <div class="logo-accent"></div>
+        </div>
+        <p class="footer-tagline">Crafting digital experiences with code and curiosity.</p>
+        <p class="footer-description">Frontend Developer passionate about creating innovative web solutions that blend creativity with functionality.</p>
+        
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <span>hetvi.barot@email.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span>Ahmedabad, Gujarat, India</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-right">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Frontend Development</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <span class="social-icon">💼</span>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#" class="social-link">
+              <span class="social-icon">📷</span>
+              <span>Instagram</span>
+            </a>
+          </div>
+          
+          <div class="newsletter">
+            <h4>Stay Updated</h4>
+            <div class="newsletter-form">
+              <input type="email" placeholder="Enter your email">
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="footer-bottom-content">
+      <p>&copy; 2025 Hetvi Barot. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="style.js"></script>
+</body>
+</html>
