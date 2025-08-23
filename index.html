@@ -7,77 +7,77 @@
   <script src="style.js"></script>
 </head>
 <body>
-  <section>
-      <nav id="mobile-menu-button">
-        <div class="container-o">
-          <div class="nav-left">
-            <div class="space-nav">
-              <a href="#">home</a>
-            </div>
-            </div>
-            <div class="mobileonly">
-                <a href="#" id="toggleMenu" onclick="event.preventDefault()">☰</a>
-            </div>
-          <div class="nav-right" id="showw">
-            <ul class="flex-between">
-              <li>
-                <a href="#" onclick="event.preventDefault(); scrollToSection('.root')">about</a>
-              </li>
-              <li>
-                <a href="#" onclick="event.preventDefault(); scrollToSection('.technical-skills')">skills</a>
-              </li>
-              <li>
-                <a href="#" onclick="event.preventDefault(); scrollToSection('.parts')">project</a>
-              </li>
-              <li>
-                <a href="#" onclick="event.preventDefault(); scrollToSection('.mainabout')">experience</a>
-              </li>
-              <li>
-                <a href="#" onclick="event.preventDefault(); scrollToSection('.site-footer')">contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-  </section>
+
+<section>
+  <nav class="navbar">
+    <div class="container-o">
+      <div class="nav-left">
+        <a href="#" class="logo">Home</a>
+      </div>
+
+      <div class="mobileonly">
+        <a href="#" id="toggleMenu" onclick="event.preventDefault()">☰</a>
+      </div>
+
+      <!-- Desktop Nav -->
+      <div class="nav-right desktoponly">
+        <ul class="flex-between">
+          <li><a href="#" onclick="event.preventDefault(); scrollToSection('.root')">About</a></li>
+          <li><a href="#" onclick="event.preventDefault(); scrollToSection('.technical-skills')">Skills</a></li>
+          <li><a href="#" onclick="event.preventDefault(); scrollToSection('.parts')">Projects</a></li>
+          <li><a href="#" onclick="event.preventDefault(); scrollToSection('.mainabout')">Experience</a></li>
+          <li><a href="#" onclick="event.preventDefault(); scrollToSection('.site-footer')">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Side Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer">
+    <ul>
+      <li><a href="#" onclick="event.preventDefault(); scrollToSection('.root')">About</a></li>
+      <li><a href="#" onclick="event.preventDefault(); scrollToSection('.technical-skills')">Skills</a></li>
+      <li><a href="#" onclick="event.preventDefault(); scrollToSection('.parts')">Projects</a></li>
+      <li><a href="#" onclick="event.preventDefault(); scrollToSection('.mainabout')">Experience</a></li>
+      <li><a href="#" onclick="event.preventDefault(); scrollToSection('.site-footer')">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Optional overlay -->
+  <div id="overlay" class="overlay"></div>
+</section>
 
   <section>
-    <div id="backgroundRipple"></div>
+
     <div class="main-container" id="mobile-menu">
 
       <div class="container">
           <div class="d">
-            <h1 class="h-tag">wellcome to hetvi.com</h1>
-            <p class="p-tag"> hetvi barot</p>
-
-            <div class="co">frontend
-            <span class="developer">developer</span>
+            <p class="p-tag">Hetvi Barot</p>
+            <h1 class="h-tag">Frontend Developer</h1>
+            
+            <div class="co">Creative 
+            <span class="developer">Coder</span>
             </div>
           
-            <h2>--Gls university--</h2>
-            <a href="hireme.html" id="openFormBtn">Hire me</a>
-
-            <div id="popup" class="popup">Request sent to admin ✅</div> -->
+            <h2>fresher • Web Developer</h2>
+            <a href="hireme.html" id="openFormBtn">Hire Me</a>
             
-            <button class="tr" onclick="goToProjects()">view projects</button>
-        
+            <button class="tr" onclick="goToProjects()">My Work</button>
+
             <p class="space-banner">
-              teach stack: 
-              <a href="https://www.w3schools.com/html/">🔗</a>
-              <a href="https://www.w3schools.com/css/">📐</a>
-              <a href="https://www.w3schools.com/js/">🧠</a>
-              <a href="https://parceljs.org/recipes/react/">🚀</a>
-              <a href="https://tailwindcss.com/docs/installation/framework-guides/parcel">💾</a>
-              
+              Skills: 
+              <a href="https://docs.google.com/document/d/1Jr_jTPAvCHztjAwZpK7x62Hw1fntRot42f-Yz-o9_DE/edit?tab=t.606tual796gn#heading=h.ji45ale52n6c" title="HTML5">🏗️</a>
+              <a href="https://docs.google.com/document/d/1HERmBWIrPGs5rCIO3zzoVQRubtM6_CZdruSM0ZPyBos/edit?tab=t.0#heading=h.9ddx8yle8iqz" title="CSS3">🎨</a>
+              <a href="https://docs.google.com/document/d/1IWQI5O6zT7YFazAZPZGlcaW2nuoVsk-lMg2KXW0FK5U/edit?tab=t.0#heading=h.x1u9i2yk6c3z" title="JavaScript">⚡</a>
+              <a href="https://docs.google.com/document/d/1umVDIUCYZTYIlH0zKCU_EyqGJ6T-XiSaKrD-wmEEYFI/edit?tab=t.29b1svpi68f" title="React">⚛️</a>
+              <a href="https://docs.google.com/document/d/1oif7x56EgP_F1L3vptUFsbZfz4QnE8_VRcUbKNEKWv8/edit?tab=t.0#heading=h.9j80a89ius4h" title="tailwindcss">🤖</a>
             </p> 
           </div>
           <div class="arrow">
-            <button onclick="functionscroll()" id="section1" aria-label="Scroll Down">
-              ⬇️
-            </button>
-          </div>
-          <div class="certificateee">
-            <img src="certificate.jpeg">
+            <div onclick="functionscroll()" id="reference" aria-label="Scroll Down">
+              ↓
+            </div>
           </div>
       </div>
 
@@ -88,15 +88,15 @@
   </section>
 
   <section>
-      <div class="root">
+      <div class="root" id="section2">
         <div class="container-about">
 
           <div>
-            <h1 class="about">About me</h1>
+            <h1 class="about" >About me</h1>
             <hr class="line"></hr>
           </div>
 
-          <div class="sectionn">
+          <div class="sectionn"  >
             <div class="section-le-1">
               <p>A passionate and self-motivated BCA student with a solid foundation in programming problem solving and frontend development proficient in langueges like html,css,javascript with a keen interest in leveraging technical skills to develop innovative software solution.</p>
               <div class="animation-box">
@@ -113,7 +113,7 @@
                   <div class="sub-1">
                         <div class="parts1">
                         <h1>technical</h1>
-                        <p>html5 , css , javascript</p>
+                        <p>html5 , css , javascript, react, tailwindcss</p>
                         </div>
                         <div class="parts2">
                         <h1>tools</h1>
@@ -144,9 +144,6 @@
   </section>
 
   <section>
-    
-    <div class="a">
-      <div class="b" id="section2">
         <div class="containeryy">
           <div class="circle"></div>
           <div class="circle"></div>
@@ -154,7 +151,11 @@
           <div class="circle"></div>
           <div class="bird"></div>
         </div>
-        
+  </section>
+
+  <section>
+    <div class="a">
+      <div class="b">
         <div class="resume-section">
           <div class="resume-glow"></div>
           <div class="resume-icon" id="resumeIcon">📄</div>
@@ -165,63 +166,116 @@
             <span class="stat">⚡ PDF Format</span>
           </div>
           <div class="resume-buttons">
-            <button class="resume-btn" onclick="downloadResume()">⬇️ Download</button>
-            <a href="resume.pdf" class="resume-btn" onclick="viewResume()">👁️ View</a>
-          </div>
-          <div class="download-count">
-            <span id="downloadCounter">Download</span>
+            <a class="resume-btn" onclick="downloadResume()">⬇️ Download</a>
+            <a href="certificate.jpeg" class="resume-btn" onclick="viewResume()">👁️ View</a>
           </div>
         </div>
+        <div class="certificateee">
+            <img src="certificate.jpeg" alt="certificate">
+            <div class="download-count">
+                <a href="certificate.jpeg" download="certificate.jpg">⬇️ Download</a>
+            </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section>
-      <div class="technical-skills">
-        <div class="contant-skills">
-            <h2 class="main-skills">Technical Skills</h2>
-            <p class="con-main-skills">A comprehensive overview of my technical expertise and proficiencies </p>
+<section>
+  <div class="technical-skills">
+    <div class="contant-skills">
+      <h2 class="main-skills">Technical Skills</h2>
+      <hr class="line"></hr>
+      <p class="con-main-skills">A comprehensive overview of my technical expertise and proficiencies</p>
+    </div>
+
+    <div class="main">
+      <!-- Left: Frontend Developer Ratings (4 blocks) -->
+      <div class="main-f">
+        <div class="main-s">
+          <h3 class="heading">Development</h3>
+
+          <!-- Rating Block 1 -->
+          <div class="f-development">
+            <div class="developp">HTML
+              <div class="per">95%</div>
+            <div class="rating-per">
+              <div class="rating" style="width: 95%;"></div>
+            </div>
+            </div>
+          </div>
+
+          <!-- Rating Block 2 -->
+          <div class="f-development">
+            <div class="developp">CSS
+              <div class="per">90%</div>
+            <div class="rating-per">
+              <div class="rating" style="width: 90%;"></div>
+            </div>
+            </div>
+          </div>
+
+          <!-- Rating Block 3 -->
+          <div class="f-development">
+            <div class="developp">JAVASCRIPT
+              <div class="per">85%</div>
+            <div class="rating-per">
+              <div class="rating" style="width: 85%;"></div>
+            </div>
+            </div>
+          </div>
+
+          <!-- Rating Block 4 -->
+          <div class="f-development">
+            <div class="developp">REACT
+              <div class="per">80%</div>
+            <div class="rating-per">
+              <div class="rating" style="width: 80%;"></div>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="main">
-          <div class="main-f">
-            <div class="main-s">
-              <h3 class="heading">development</h3>
-              <div class="f-development">
-                <div class="developp">frontend dvelopment
-                  <div class="per">95%</div>
-                </div>
-              </div>
-            </div>  
-              <div class="rating-per">
-                <div class="rating"></div>
-              </div>
+
+      <!-- Right: HTML, CSS, JS, React Icons (2x2 layout) -->
+      <div class="lang">
+        <div class="lang-row">
+          <div class="javas">
+            <div class="j">
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width="30" alt="HTML">
+              <a href="https://docs.google.com/document/d/1Jr_jTPAvCHztjAwZpK7x62Hw1fntRot42f-Yz-o9_DE/edit?tab=t.606tual796gn#heading=h.ji45ale52n6c"style="text-decoration: none;">HTML</a>
+            </div>
           </div>
-          <div class="lang">
-            <div class="javas">
-              <div class="j">
-                <a href="strc.html">HTML</a>
-              </div>
+        
+          <div class="javas">
+            <div class="j">
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width="30" alt="CSS">
+              <a href="https://docs.google.com/document/d/1HERmBWIrPGs5rCIO3zzoVQRubtM6_CZdruSM0ZPyBos/edit?tab=t.0#heading=h.9ddx8yle8iqz" style="text-decoration: none;">CSS</a>
             </div>
-            <div class="javas">
-              <div class="j">
-                <a href="strc.html">CSS</a>
-              </div>
-            </div>
-            <div class="javas">
-              <div class="j">
-                <a href="strc.html">JAVASCRIPT</a>
-              </div>
-            </div>
-              <div class="javas">
-              <div class="j">
-                <a href="strc.html">REACT</a>
-              </div>
-            </div>
+          </div>
         </div>
-      </div>    
-    
-  </section>
+
+        <div class="lang-row">
+          <div class="javas">
+            <div class="j">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width="30" alt="JavaScript">
+              <a href="https://docs.google.com/document/d/1IWQI5O6zT7YFazAZPZGlcaW2nuoVsk-lMg2KXW0FK5U/edit?tab=t.0" style="text-decoration: none;">JAVASCRIPT</a>
+            </div>
+          </div>
+
+          <div class="javas">
+            <div class="j">
+              <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" width="30" alt="React">
+              <a href="https://docs.google.com/document/d/1umVDIUCYZTYIlH0zKCU_EyqGJ6T-XiSaKrD-wmEEYFI/edit?tab=t.29b1svpi68f" style="text-decoration: none;">REACT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
   <section class="parts">
     <div class="part-1">
@@ -246,10 +300,10 @@
           <span class="lann">HTML</span>
           <span class="lann">CSS</span>
           <span class="lann">JAVASCRIPT</span>
-          <span class="lann">REACT</span>
         </div>
         <div class="part-8">
-          <button class="bu">view details</button>
+          <a class="bu">Chatbot</a>
+          <a class="bu">Request-page</a>
         </div>
       </div>
 
@@ -264,13 +318,12 @@
           <p class="tital">Food Order App</p>
         </div>
         <div class="part-7">
-          <span class="lann">HTML</span>
-          <span class="lann">CSS</span>
-          <span class="lann">JAVASCRIPT</span>
           <span class="lann">REACT</span>
+          <span class="lann">TAILWINDSCSS</span>
         </div>
         <div class="part-8">
-          <button class="bu">view details</button>
+          <a class="bu">Food-app</a>
+          <a class="bu">HerFlix-GPT</a>
         </div>
       </div>
     </div>
@@ -287,10 +340,10 @@
         
         <div class="relative">
           <div class="center-line"></div>
-          <div class="part-one-p">
+          <div class="part-one-r">
             <div class="devide-left">
               <h3>10th Grade</h3>
-              <p>Vidhyanagar School</p>
+              <p>Vidhyanagar primary School</p>
               <p>Marks: 65%</p>
             </div>
             <div class="numeric">
@@ -305,8 +358,8 @@
           <div class="part-one-p">
             <div class="devide-left">
               <h3>12th Grade</h3>
-              <p>Higher Secondary</p>
-              <p>Marks: 75%</p>
+              <p>Vidhyanagar Higher Secondary</p>
+              <p>Marks: 72%</p>
             </div>
             <div class="numeric">
               <div class="st">2</div>
@@ -317,11 +370,11 @@
 
         <div class="relative">
           <div class="center-line"></div>
-          <div class="part-one-p">
+          <div class="part-one-r">
             <div class="devide-left">
               <h3>BCA Degree</h3>
               <p>GLS University</p>
-              <p>Frontend Development</p>
+              <p>7.39</p>
             </div>
             <div class="numeric">
               <div class="st">3</div>
@@ -335,7 +388,7 @@
           <div class="part-one-p">
             <div class="devide-left">
               <h3>Future Goals</h3>
-              <p>Full Stack Developer</p>
+              <p>Frontend Developer</p>
               <p>Amazing Projects</p>
             </div>
             <div class="numeric">
@@ -359,17 +412,17 @@
           <h2>Hetvi Barot</h2>
           <div class="logo-accent"></div>
         </div>
-        <p class="footer-tagline">Crafting digital experiences with code and curiosity.</p>
+        <p class="footer-tagline">Bridging design and development with clean code, bold visuals, and React magic.</p>
         <p class="footer-description">Frontend Developer passionate about creating innovative web solutions that blend creativity with functionality.</p>
         
         <div class="contact-info">
           <div class="contact-item">
             <span class="contact-icon">📧</span>
-            <span>hetvi.barot@email.com</span>
+            <span>hetvi.barot@gmail.com</span>
           </div>
           <div class="contact-item">
             <span class="contact-icon">📱</span>
-            <span>+91 98765 43210</span>
+            <span>+91 96620 77907</span>
           </div>
           <div class="contact-item">
             <span class="contact-icon">📍</span>

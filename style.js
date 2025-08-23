@@ -10,16 +10,14 @@
     //   document.getElementById("showw").classList.toggle("show");
     // }
 // start navigation
-    const mainIcon = document.getElementById('toggleMenu');
-    const moreIcons = document.getElementById('showw');
+// Start navigation toggle using class
+const mainIcon = document.getElementById('toggleMenu');
+const mobileDrawer = document.getElementById('mobileDrawer');
 
-    mainIcon.addEventListener('click', () => {
-      if (moreIcons.style.display === 'block') {
-        moreIcons.style.display = 'none';
-      } else {
-        moreIcons.style.display = 'block';
-      }
-    });
+mainIcon.addEventListener('click', () => {
+  mobileDrawer.classList.toggle('drawer-open');
+});
+
 // stop navigation
     
 // start arrow
@@ -58,3 +56,6 @@ function scrollToSection(selector) {
     mobileMenu.style.display = 'none';
   }
 }
+
+
+
